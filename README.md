@@ -36,7 +36,7 @@ class Quiz:
             print("---------------------------------------------")
 
         print("Fim do jogo!")
-        print(f"Sua pontuação final é: {self.score}/{len(self.questions)}") 
+        print(f"Sua pontuação final é: {self.score}/{len(self.questions)}")
 
 
 quiz = Quiz()
