@@ -1,45 +1,45 @@
 # JogoQuizemPython
-# Neste exemplo, temos uma classe Quiz que possui uma lista de perguntas com opções e respostas 
 
-class Quiz: 
-    def __init__(self):
-        self.questions = [
-            {
-                'question': 'Qual é o maior animal terrestre?',
-                'options': ['Elefante', 'Rinoceronte', 'Girafa', 'Hipopótamo'],
-                'answer': 'Elefante'
-            },
-            
-            {
-                'question': 'Qual é o maior peixe do oceano?',
-                'options': ['Tubarão-baleia', 'Tubarão-branco', 'Baleia-azul', 'Atum'],
-                'answer': 'Tubarão-baleia'
-            }
-        ]
-        self.score = 0
+# Clonando o Jogo
 
-    def run(self):
-        print("Bem-vindo ao Quiz sobre o Mundo Animal!")
-        print("Responda corretamente o maior número de perguntas.")
-        print("---------------------------------------------")
-        for question in self.questions:
-            print(question['question'])
-            for i, option in enumerate(question['options']):
-                print(f"{i + 1}. {option}")
+Aqui está um guia detalhado sobre como clonar o jogo Quiz em Python. Siga os passos abaixo para começar:
 
-            user_answer = input("Sua resposta (digite o número da opção): ")
-            if user_answer == str(question['options'].index(question['answer']) + 1):
-                print("Resposta correta!")
-                self.score += 1
-            else:
-                print(f"Resposta incorreta! A resposta correta era: {question['answer']}")
-            print("---------------------------------------------")
+## Pré-requisitos
 
-        print("Fim do jogo!")
-        print(f"Sua pontuação final é: {self.score}/{len(self.questions)}")
+Certifique-se de ter os seguintes itens instalados em seu sistema:
 
+- Python (versão 3.0 ou superior)
+- Git
 
-quiz = Quiz()
-quiz.run()
+## Passo 1: Clone o repositório
 
+Abra o terminal e navegue até o diretório onde deseja clonar o jogo. Em seguida, execute o seguinte comando:
+
+```
+git clone https://github.com/MatheusUsb/JogoQuizemPython.git
+```
+
+Isso irá clonar o repositório do jogo para o seu diretório local.
+
+## Passo 2: Acesse o diretório do jogo
+
+Navegue para o diretório do jogo usando o comando `cd`:
+
+```
+cd JogoQuizemPython
+```
+
+## Passo 3: Execute o jogo
+
+Agora que você está no diretório do jogo, execute o seguinte comando para iniciar o jogo:
+
+```
+python quiz.py ou python3 quiz.py
+```
+
+Isso iniciará o jogo Quiz sobre o Mundo Animal.
+
+## Conclusão
+
+Parabéns! Agora você clonou o jogo Quiz em Python e pode começar a jogar. Divirta-se :)
 
